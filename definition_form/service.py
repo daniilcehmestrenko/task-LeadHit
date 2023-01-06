@@ -30,11 +30,12 @@ class TemplateSearchEngine:
         return data
 
     def find_template(self):
-        form_search_cond = Q()
-        for k, v in self.data.items():
-            form_search_cond &= Q(**{f'template_fields__{k}': v})
+        query = Q()
+        for name_field, type_field in self.data.items():
+            query &= Q(template_fields__field_name=name_field) & \
+                     Q(template_fields__field_type=type_field)
 
-        template = TemplateForm.objects.filter(form_search_cond)
+        template = TemplateForm.objects.filter(query)
         if template:
             return template
 
