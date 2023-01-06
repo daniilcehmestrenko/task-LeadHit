@@ -5,7 +5,7 @@ from .models import FieldForm, TemplateForm
 
 class FieldFormInLine(admin.StackedInline):
     model = FieldForm
-    extra = 4
+    extra = 1
 
 
 @admin.register(TemplateForm)
