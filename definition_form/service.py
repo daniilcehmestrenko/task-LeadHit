@@ -1,4 +1,6 @@
+from django.db.models import Q
 from .validators import ValidateDate, ValidateEmail, ValidatePhone
+from .models import TemplateForm
 
 
 class TemplateSearchEngine:
@@ -28,4 +30,12 @@ class TemplateSearchEngine:
         return data
 
     def find_template(self):
-        pass
+        form_search_cond = Q()
+        for k, v in self.data.items():
+            form_search_cond &= Q(**{f'template_fields__{k}': v})
+
+        template = TemplateForm.objects.filter(form_search_cond)
+        if template:
+            return template
+
+        return None
