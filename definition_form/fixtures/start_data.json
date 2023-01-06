@@ -1,0 +1,147 @@
+[
+{
+  "model": "definition_form.fieldform",
+  "pk": 19,
+  "fields": {
+    "field_name": "a",
+    "field_type": "text",
+    "template_form": 10
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 20,
+  "fields": {
+    "field_name": "b",
+    "field_type": "text",
+    "template_form": 10
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 21,
+  "fields": {
+    "field_name": "user_name",
+    "field_type": "text",
+    "template_form": 11
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 22,
+  "fields": {
+    "field_name": "user_date",
+    "field_type": "date",
+    "template_form": 11
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 23,
+  "fields": {
+    "field_name": "user_email",
+    "field_type": "email",
+    "template_form": 11
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 24,
+  "fields": {
+    "field_name": "name",
+    "field_type": "text",
+    "template_form": 12
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 25,
+  "fields": {
+    "field_name": "email",
+    "field_type": "email",
+    "template_form": 12
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 26,
+  "fields": {
+    "field_name": "phone",
+    "field_type": "phone",
+    "template_form": 12
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 27,
+  "fields": {
+    "field_name": "order",
+    "field_type": "text",
+    "template_form": 12
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 28,
+  "fields": {
+    "field_name": "name",
+    "field_type": "text",
+    "template_form": 13
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 29,
+  "fields": {
+    "field_name": "email",
+    "field_type": "email",
+    "template_form": 13
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 30,
+  "fields": {
+    "field_name": "phone",
+    "field_type": "phone",
+    "template_form": 13
+  }
+},
+{
+  "model": "definition_form.fieldform",
+  "pk": 31,
+  "fields": {
+    "field_name": "birthday",
+    "field_type": "date",
+    "template_form": 13
+  }
+},
+{
+  "model": "definition_form.templateform",
+  "pk": 10,
+  "fields": {
+    "template_name": "MyForm"
+  }
+},
+{
+  "model": "definition_form.templateform",
+  "pk": 11,
+  "fields": {
+    "template_name": "UserForm"
+  }
+},
+{
+  "model": "definition_form.templateform",
+  "pk": 12,
+  "fields": {
+    "template_name": "Order Form"
+  }
+},
+{
+  "model": "definition_form.templateform",
+  "pk": 13,
+  "fields": {
+    "template_name": "ClientForm"
+  }
+}
+]
