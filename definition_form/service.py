@@ -24,13 +24,13 @@ class TemplateSearchEngine:
 
     def __validated_data(self, data: dict):
         for key, value in data.items():
-
             data[key] = self.__type_definition(value)
 
         return data
 
     def find_template(self):
         template = TemplateForm.objects.all()
+
         for name_field, type_field in self.data.items():
             query = Q(template_fields__field_name=name_field) & \
                     Q(template_fields__field_type=type_field)

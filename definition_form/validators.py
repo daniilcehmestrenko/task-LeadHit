@@ -16,8 +16,7 @@ class ValidateEmail:
 
 class ValidatePhone:
 
-    def __call__(self, value: str):
-        
+    def __call__(self, value: str):       
         if re.fullmatch(r'\+7\d{10}', value):
             
             return True
@@ -28,7 +27,6 @@ class ValidatePhone:
 class ValidateDate:
 
     def __call__(self, value: str):
-
         if re.fullmatch(r'\d\d.\d\d.\d{4}', value) or \
            re.fullmatch(r'\d{4}-\d\d-\d\d', value):
             
